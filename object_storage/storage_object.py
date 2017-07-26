@@ -486,6 +486,9 @@ class StorageObject:
     def fileno(self):
         return 1
 
+    def close(self):
+        pass
+
     def __len__(self):
         if not self.model:
             self.load()
